@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid-template-columns.css">
+    <title>CSS GRIDS</title>
+</head>
+
+<body>
+    <h2>Grid System</h2>
+    <section class="wrapper">
+        <!-- The wrapper class is styled as grid so all these elements inside wroapper are grid-items -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </section>
+    <h2>Explicitly columns using 'grid-template-columns' </h2>
+
+    <section class="explicit-columns">
+        <!-- Explicitly defining grids to take two columns one with 100px width and other with 200px -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </section>
+    <h2>Explicitly columns using 'grid-template-columns' with fraction(fr) unit</h2>
+
+    <section class="explicit-columns-fractions">
+        <!-- Explicitly defining grids using fr(fraction) unit -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </section>
+
+    <h2>Explicitly columns using 'grid-template-columns' with minmax(min,max) and max-content</h2>
+
+    <section class="explicit-columns-minmax">
+        <div>1</div>
+        <div>2 and extra</div>
+        <div>3</div>
+    </section>
+
+    <h2>Explicitly columns using 'grid-template-columns' with minmax(min,max) and max-content</h2>
+
+    <section class="explicit-columns-minmax2">
+        <div>1</div>
+        <div>2 and extra</div>
+        <div>3</div>
+    </section>
+
+    <h2>Explicitly columns using 'grid-template-columns' with repeat(#,pattern)</h2>
+
+    <section class="explicit-columns-repeat">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+
+    <h2>Explicitly columns using 'grid-template-columns' with repeat(autofill,pattern)</h2>
+
+    <section class="explicit-columns-repeat-autofill">
+        <!-- Resize the browser to see output-->
+        <!-- Works like float left i.e, stacks all the divs towards left -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </section>
+
+
+
+
+</body>
+
+</html>
