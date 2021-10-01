@@ -10,33 +10,8 @@
 </head>
 
 <body>
-    <h2>Grid System</h2>
-    <section class="wrapper">
-        <!-- The wrapper class is styled as grid so all these elements inside wroapper are grid-items -->
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-    </section>
-    <h2>Explicitly columns using 'grid-template-columns' </h2>
-
-    <section class="explicit-columns">
-        <!-- Explicitly defining grids to take two columns one with 100px width and other with 200px -->
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-    </section>
-    <h2>Explicitly columns using 'grid-template-columns' with fraction(fr) unit</h2>
-
-    <section class="explicit-columns-fractions">
-        <!-- Explicitly defining grids using fr(fraction) unit -->
+    <h2>To make all rows 50px, grid-auto-rows:50px;</h2>
+    <section class="wrapper1">
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -46,54 +21,40 @@
         <div>7</div>
     </section>
 
-    <h2>Explicitly columns using 'grid-template-columns' with minmax(min,max) and max-content</h2>
-
-    <section class="explicit-columns-minmax">
-        <div>1</div>
-        <div>2 and extra</div>
-        <div>3</div>
-    </section>
-
-    <h2>Explicitly columns using 'grid-template-columns' with minmax(min,max) and max-content</h2>
-
-    <section class="explicit-columns-minmax2">
-        <div>1</div>
-        <div>2 and extra</div>
-        <div>3</div>
-    </section>
-
-    <h2>Explicitly columns using 'grid-template-columns' with repeat(#,pattern)</h2>
-
-    <section class="explicit-columns-repeat">
+    <h2>To make all rows 50px 75px, grid-auto-rows:50px 75px;</h2>
+    <section class="wrapper2">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
     </section>
 
-    <h2>Explicitly columns using 'grid-template-columns' with repeat(autofill,pattern)</h2>
-
-    <section class="explicit-columns-repeat-autofill">
-        <!-- Resize the browser to see output-->
-        <!-- Works like float left i.e, stacks all the divs towards left -->
+    <h2>To make 2 columns of 50px and 1fr, 2 rows of 70px and 100px , and remaining rows of 30px</h2>
+    <section class="wrapper3">
         <div>1</div>
         <div>2</div>
         <div>3</div>
         <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
     </section>
-    <!-- 
-repeat()
-minmax()
-max-content
-min-content
-auto-fill etc
-
-All these applies the same to grid-template-rows
-
-     -->
 
 
-
+    <h2>using minmax() with grid-auto-rows to make all rows to have minimum size of 100 px
+        and maximum of maximum content size </h2>
+    <section class="wrapper4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7 with lot of content</div>
+    </section>
 
 </body>
 

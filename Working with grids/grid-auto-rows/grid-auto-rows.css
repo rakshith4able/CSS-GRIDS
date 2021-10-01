@@ -1,68 +1,36 @@
-h2{
-    text-align: center;
-}
-
 div{
     background-color: crimson;
-    margin: 1px;
     color: white;
-    text-align: center;
+    margin: 1px;
+    text-align: center; 
 }
 
-
-.wrapper{
-    /* To use grid layout */
+.wrapper1{
     display: grid;
+    grid-template-columns: 50px;
+    /* To make all rows 50px */
+    grid-auto-rows: 50px;
 }
 
-/* Explicitly defining columns using grid-template-columns specifying the size they should take */
-.explicit-columns
-{
-display: grid;
-/* Specifying 2 columns in a row of size 100px and 200 px , Here rows are implicitly applied */
-grid-template-columns: 100px 200px;
-}
-
-.explicit-columns-fractions{
+.wrapper2{
     display: grid;
-    /* To use fr unit with grids *1/
-    /* To create 2 columns each of same fraction size */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50px;
+    /* To make all rows 50px 75px */
+    grid-auto-rows: 50px 75px;
 }
 
-.explicit-columns-minmax{
+.wrapper3{
     display: grid;
-    /* To make 1st column and third column to be 1fr and
-    2nd column to take minimum of 50px and maximum of the maximum content size */
-    grid-template-columns: 1fr minmax(50px,max-content) 1fr;
-    
+    /* To make 2 columns of 50px and 1fr, 2 rows of 70px and 100px , and remaining rows of 30px */
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 70px 100px;
+    grid-auto-rows: 30px;
 }
 
-.explicit-columns-minmax2{
+.wrapper4{
     display: grid;
-    /* To make 1st column and third column to be 1fr and
-    2nd column to take minimum of 50px and maximum of minimum content size  */
-    grid-template-columns: 1fr minmax(50px,min-content) 1fr;
+    /* To make 2 columns of 50px and 1fr, to make all rows to have minimum size of 100 px
+        and maximum of maximum content size */
+    grid-template-columns: 50px 1fr;
+    grid-auto-rows: minmax(30px,max-content);
 }
-
-.explicit-columns-repeat{
-    display: grid;
-    /*
-      Instead of repeating the same pattern twice we can use 
-      repeat(No.  of times to repeat,pattern)
-   grid-template-columns: 50px 100px 50px 100px;
-    */
-    grid-template-columns: repeat(2,50px 100px);
-    /* we can use the repeat with fractions also
-  grid-template-columns: 1fr repeat(2,50px 100px) 1fr;
-    */
-}
-
-.explicit-columns-repeat-autofill
-{
-    display: grid;
-    /* To act like float left using repeat*/
-    grid-template-columns: repeat(auto-fill,200px);
-    /* They get stacked when we shrink the browser */
-}
-
