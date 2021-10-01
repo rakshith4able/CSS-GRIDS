@@ -1,0 +1,14 @@
+.wrapper{
+    /* To use grid layout */
+    display: grid;
+    /* To specify no of colums with their size(1 fraction each) */
+    /* This 4 columns are explicit grids(1,2,3,4) and rest rows are implicit grids(5,6,7,8,9) */
+    grid-template-columns: repeat(4,1fr);
+    /* Specifying row height */
+    grid-auto-rows: 100px;
+}
+
+div{
+    background-color: crimson;
+    margin: 1px;
+}
