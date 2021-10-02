@@ -1,0 +1,63 @@
+div{
+    background-color: crimson;
+    color: white;
+    text-align: center; 
+    }
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  
+}
+
+.images img{
+    width: 350px;
+    height: 350px;
+}
+
+/* Starts Here */
+
+.parent
+{
+    display: grid;
+    grid-gap:5px 5px;
+}
+/* select child of parent and span columns using grid-column-start and grid-column-end  */
+#one{
+    /* To start from grid line 1 and end on grid line 4 of columns */
+grid-column-start:1;
+grid-column-end:4;
+}
+
+#two
+{
+    /* Another short hand is using short hand seperating start and end by / */
+    /* To start at 1 and end at 3 */
+    grid-column:1 / 3 ;
+}
+
+#two{
+    /* TO make #two to take two rows space */
+    grid-row:2 / 4;
+}
+
+/* using span keyword. If I want #five to span across 2 columns */
+#five
+{
+    grid-column: 1/ span 2 ; 
+}
+
+/* using grid-area:row-start column-start row-end column-end;  */
+#seven{
+    grid-area:5 / 1/ 6/ 3;
+}
+
+/* Ends here */
+
+@media (max-width:600px) {
+    .images{
+        grid-template-columns: 1fr;
+        grid-gap:5px;
+    }
+}
