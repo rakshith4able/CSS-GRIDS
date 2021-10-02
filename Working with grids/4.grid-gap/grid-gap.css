@@ -1,0 +1,19 @@
+div{
+    background-color: crimson;
+    color: white;
+    text-align: center; 
+}
+
+.wrapper1{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows:auto;
+    grid-gap:0px;
+}
+
+.wrapper2{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-auto-rows:auto;
+    grid-gap:10px 50px;
+}
