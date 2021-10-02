@@ -1,0 +1,79 @@
+div{
+    background-color: crimson;
+    color: white;
+    text-align: center; 
+    }
+
+.parent{
+    display: grid;
+    grid-gap:1px;
+    /* specifying grid-line-names */
+    grid-template-columns: 
+    [grid-start] 1fr
+    [content-start] 1fr
+    [content-end] 1fr
+    [grid-end];
+}
+
+/* using grid-line-names */
+
+.parent #one,.parent #five{
+grid-column:grid-start/grid-end;
+}
+
+.parent2{
+    display: grid;
+    grid-gap:1px;
+    /* specifying grid-line-names for column names*/
+    grid-template-columns: 
+    [grid-start] 1fr
+    [content-start] 1fr
+    [content-end] 1fr
+    [grid-end];
+    /* specifying grid-line-names for row lines */
+    /* we can specify multiple names for same line by separating  names using space */
+    grid-template-rows: 
+    [header-start] 1fr 
+    [header-end body-start] 5fr
+    [body-end footer-start] 1fr
+    [footer-end];
+
+}
+
+
+.parent2 #one,.parent2 #five{
+    grid-column:grid-start/grid-end;
+ }
+ 
+.parent2 #two
+{
+    grid-area:body-start/grid-start/body-end/grid-end ;
+}
+
+.parent2 #four{
+    grid-column:content-start/grid-end;
+}
+
+.parent3{
+    display: grid;
+    grid-gap:1px;
+    /* use same start and end in both rows and columns */
+    grid-template-columns: 
+    [content-start]1fr
+    1fr [content-end]
+    1fr;
+    grid-template-rows: 
+    1fr [content-start]
+    1fr 
+    1fr [content-end] ;
+}
+
+.parent3 #one
+{
+grid-column: 1/-1;
+}
+
+.parent3 #two{
+    /* Instead of specifying 4 values for grid area we just specify prefix of -start -end present in both rows and columns */
+    grid-area:content;
+}

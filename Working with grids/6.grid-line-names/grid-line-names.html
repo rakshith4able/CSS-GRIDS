@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid-line-names.css">
+    <title>CSS GRIDS</title>
+</head>
+
+<body>
+    <h1>grid-line-names</h1>
+
+    <pre>
+        grid-template-columns and grid-template-rows performs 2 functions:
+        1)To define track sizing by specifying width 
+        2)defines the line names created by grid columns or grid rows
+
+        Syntax is as follows:
+
+        grid-template-columns:[linename] size;
+
+        grid-template-rows:[linename] size;
+
+        //line name can be anything we want
+    </pre>
+
+    <h2>Creating 3 columns with line names [grid-start] [content-start] [content-end] [grid-end]</h2>
+    <section class="parent">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </section>
+
+    <h2>Creating 3 columns with line names [grid-start] [content-start] [content-end] [grid-end]</h2>
+    <h2>and 3 rows with line names [header-start] [header-end body-start] [body-end footer-start][footer-end]</h2>
+    <section class="parent2">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+    </section>
+
+    <h2>Creating 2 column of content starting from line 1 and 2 rows of content starting from line 2</h2>
+    <h2>If we use -start and -end in both rows and columns with same prefix name we can specify area as just prefix name
+    </h2>
+    <section class="parent3">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+    </section>
+
+
+
+</body>
+
+</html>
