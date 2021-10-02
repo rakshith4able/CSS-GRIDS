@@ -1,0 +1,12 @@
+main{
+    display: grid;
+    grid-column: 1fr;
+    grid-auto-rows: minmax(min-content,max-content);
+    text-align: center;
+}
+
+
+
+main div img{
+    width: 100%;
+}
