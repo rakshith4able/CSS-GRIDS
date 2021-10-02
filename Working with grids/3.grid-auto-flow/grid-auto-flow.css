@@ -1,0 +1,22 @@
+div{
+    background-color: crimson;
+    color: white;
+    margin: 1px;
+    text-align: center; 
+}
+
+.wrapper1{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 70px 100px;
+    /* Setting grid-auto-flow to row which is default behaviour */
+    grid-auto-flow: row;
+
+}
+.wrapper2{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 70px 100px;
+    /* Setting grid-auto-flow to column*/
+    grid-auto-flow: column;
+}
