@@ -1,0 +1,93 @@
+div{
+    background-color: crimson;
+    color: white;
+    text-align: center; 
+    }
+
+.parent{
+    display: grid;
+    grid-gap:1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    /* Defining grid template aread after defining template-rows and cols */
+    grid-template-areas:"header header header"
+                        "nav main ads"
+                        "nav main featured"
+                        "footer footer footer";
+}
+
+/* Specify name used in grid template areas in children's grid-area */
+
+.parent #one {
+    grid-area: header;
+}
+
+.parent #two{
+    grid-area:nav;
+}
+
+.parent #three{
+    grid-area:main;
+}
+
+.parent #four{
+    grid-area:ads;
+}
+
+.parent #five{
+    grid-area:featured;
+}
+
+.parent #six{
+    grid-area:footer;
+}
+
+.parent2{
+    display: grid;
+    grid-gap:1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-areas:"header header header"
+                        "nav main ads"
+                        "nav main featured"
+                        "footer footer footer";
+}
+
+
+.parent2 #one {
+    grid-area: header;
+}
+
+.parent2 #two{
+    grid-area:nav;
+}
+
+.parent2 #three{
+    grid-area:main;
+}
+
+.parent2 #four{
+    grid-area:ads;
+}
+
+.parent2 #five{
+    grid-area:featured;
+}
+
+.parent2 #six{
+    grid-area:footer;
+}
+/* Lets overlap the #extra on the existing layout  */
+/* using -start and -end which is auto generated from grid-template area values */
+#extra{
+    background-color: blue;
+    grid-row: header-start/footer-end;
+    grid-column: header-start/nav-end;
+    opacity: 1;
+    /* Now #extra is overlapped on existing layout */
+    /* We can use z-index to send in backwards or bring it forward */
+    /* z-index: -1; sends it back
+       z-index:1; makes it stay in front  */
+}
+
+

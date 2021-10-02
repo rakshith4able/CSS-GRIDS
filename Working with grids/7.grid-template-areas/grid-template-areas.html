@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid-template-areas.css">
+    <title>CSS GRIDS</title>
+</head>
+
+<body>
+    <h1>grid-template-areas -> We can define a single ares using this property</h1>
+
+    <pre>
+        1)Define grid-template-rows and columns first.
+        2)Define grid-template areas using ""
+        Syntax is as follows:
+        grid-template-areas:"header header header"
+                            "nav main ads"
+                            "nav main featured"
+                            "footer footer footer";
+        
+        3)We canuse .(period) as value in grid-template-areas to specify an empty space
+
+        4)When we declare names in grid-template-areas we automatically get -start and -end of it.
+    </pre>
+
+    <h2>Using the above grid-template areas specifying the names in grid areas of 6 children</h2>
+    <section class="parent">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+    </section>
+
+    <h2>Using the grid-template-area auto properties like -start and -end for same layout with one more item called
+        extra</h2>
+    <section class="parent2">
+        <div id="one">1</div>
+        <div id="two">2</div>
+        <div id="three">3</div>
+        <div id="four">4</div>
+        <div id="five">5</div>
+        <div id="six">6</div>
+        <div id="extra">extra</div>
+    </section>
+</body>
+
+</html>
